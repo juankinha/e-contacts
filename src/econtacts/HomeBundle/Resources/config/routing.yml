@@ -1,0 +1,4 @@
+# src/econtacts/HomeBundle/Resources/config/routing.yml
+econtacts_home_homepage:
+    pattern:  /home
+    defaults: { _controller: econtactsHomeBundle:Default:index }

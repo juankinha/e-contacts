@@ -1,0 +1,7 @@
+parameters:
+#    econtacts_home.example.class: econtacts\HomeBundle\Example
+
+services:
+#    econtacts_home.example:
+#        class: %econtacts_home.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>{% block title %}¡Bienvenido a Symfony!{% endblock %}</title>
+    {% block stylesheets %}
+    <link href="{{ asset('bundles/acmedemo/css/style.css') }}" type="text/css" rel="stylesheet" />
+    {% endblock %}
+    </head>
+    
+    <body>
+
+    <header>
+    
+    <img src="/Symfony/web/bundles/acmedemo/css/images/contactos.jpg" alt="Inicio"
+    	style="width:950px;height:200px;position:relative;left: 100px;border-radius:10px;
+		box-shadow: 5px 5px 5px #888888;top:20px;">
+    
+    </header>
+	<section>
+	<div class="navbox">
+	<ul class="nav" style="font-family:Arial, Helvetica, sans-serif;">
+	<li><a href="/Symfony/web/app_dev.php/home">Inicio</a></li>
+	<li><a href="/Symfony/web/app_dev.php/acceso">Acceder</a></li>
+	<li><a href="#">Registro</a></li>
+	<li><a href="/Symfony/web/app_dev.php/contact">Contacto</a></li>
+	</ul>
+	</div>
+	</section>
+	<section>
+	<div class="cont">
+        {% block content %}
+        <section style="margin-top:10px;margin-left:20px;margin-rigth:20px;font-family:Arial, Helvetica, sans-serif">
+        <header><h1>e-contactos</h1></header>
+        <article>¿Quieres tener tus contactos organizados y disponibles en cualquier lugar? </br>
+        e-contactos es la solución</article>
+        
+        
+        </section>
+        {% endblock %}
+    </div>
+	</section>
+	
+	<div style="position:relative;float:left;top:200px;width:950px;height:10%;background:#cbcbcb;border-radius:10px;
+		box-shadow: 5px 5px 5px #888888;left: 100px;">
+	<section style="margin-left:100px;margin-top:10px;">e-contacts 2013</section>
+	
+	</div>
+	
+    </body>
+</html>

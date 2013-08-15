@@ -1,0 +1,7 @@
+parameters:
+#    econtacts_acceso.example.class: econtacts\AccesoBundle\Example
+
+services:
+#    econtacts_acceso.example:
+#        class: %econtacts_acceso.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

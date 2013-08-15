@@ -1,0 +1,3 @@
+econtacts_acceso_homepage:
+    pattern:  /acceso
+    defaults: { _controller: econtactsAccesoBundle:Default:acceso }

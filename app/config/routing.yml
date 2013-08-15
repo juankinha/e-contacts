@@ -1,0 +1,32 @@
+econtacts_acceso:
+    resource: "@econtactsAccesoBundle/Resources/config/routing.yml"
+    prefix:   /
+
+econtact_contact:
+    resource: "@econtactContactBundle/Resources/config/routing.yml"
+    prefix:   /
+
+econtacts_home:
+    resource: "@econtactsHomeBundle/Resources/config/routing.yml"
+    prefix:   /
+
+acme_hello:
+    resource: "@AcmeHelloBundle/Resources/config/routing.yml"
+    prefix:   /
+
+
+
+# src/Acme/HelloBundle/Resources/config/routing.yml
+hello:
+    path:     /hello/{name}
+    defaults: { _controller: AcmeHelloBundle:Hello:index }
+    
+# src/econtacts/HomeBundle/Resources/config/routing.yml 
+home:
+    path:     /home/
+    defaults: { _controller: econtactsHomeBundle:Default:index }
+    
+# src/econtacts/HomeBundle/Resources/config/routing.yml 
+contact:
+    path:     /contact/
+    defaults: { _controller: econtactContactBundle:Default:contact }

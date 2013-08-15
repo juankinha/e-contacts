@@ -1,0 +1,36 @@
+{% extends "econtactsHomeBundle:Default:base_home.html.twig" %}
+
+{% block title "Symfony Forms Tutorial" %}
+
+{% block content %}
+    <p class=margin_cont style="margin-top:20px;margin-bottom:20px;font-family:Arial, Helvetica, sans-serif;">
+    Si tienes alguna duda o sugerencia no dudes en contactar con nosotros e intentaremos resolverla lo mas r&aacute;pido posible.
+    </p>
+
+    <form action="" style="margin-bottom:10px;font-family:Arial, Helvetica, sans-serif;" method="POST" {{ form_enctype(form) }}>
+    {{ form_errors(form) }}
+    <table class=margin_cont >
+        <tr align=left valign=top>
+		<th>{{ form_label(form.email) }}</th>
+        <td>{{ form_errors(form.email) }}</td>
+        <td>{{ form_widget(form.email) }}</td>
+		</tr>
+		
+		<tr align=left valign=top>
+		<th>{{ form_label(form.message) }}</th>
+        <th>{{ form_errors(form.message) }}</th>
+        <th>{{ form_widget(form.message,{ 'attr': {'class': 'estilotextarea'}}) }}</th>
+		</tr>
+		
+		<tr align=left valign=top>
+		<th>{{ form_rest(form) }}</th>
+		</tr>
+		
+		<tr align=left valign=top >
+		<th><input type="submit" value="Enviar" style="width:60px;height:25px;font-family:Arial, Helvetica, sans-serif;" /></th>
+		</tr>
+		
+	</table>
+       
+    </form>
+{% endblock %}
